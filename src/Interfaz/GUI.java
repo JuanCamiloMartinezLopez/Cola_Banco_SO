@@ -54,18 +54,18 @@ public class GUI {
 	protected void createContents() {
 		cola=new Cola();
 		shell = new Shell();
-		shell.setSize(474, 323);
+		shell.setSize(490, 181);
 		shell.setText("Cola de Banco");
 		
 		clientes = new Text(shell, SWT.BORDER);
-		clientes.setBounds(93, 104, 337, 21);
+		clientes.setBounds(104, 10, 337, 21);
 		clientes.setEditable(false);
 		clientes.setEnabled(false);
 		
 		lblColaVacia = new Label(shell, SWT.NONE);
-		lblColaVacia.setBounds(221, 131, 55, 15);
+		lblColaVacia.setBounds(232, 37, 55, 15);
 		lblColaVacia.setText("Cola Vacia");
-		lblColaVacia.setVisible(false);
+		lblColaVacia.setVisible(true);
 		
 		
 		btnAtender = new Button(shell, SWT.NONE);
@@ -81,27 +81,27 @@ public class GUI {
 				}
 			}
 		});
-		btnAtender.setBounds(94, 225, 75, 25);
+		btnAtender.setBounds(67, 92, 75, 25);
 		btnAtender.setText("Atender");
 		
 		Label lblNumeroDeRecibos = new Label(shell, SWT.NONE);
-		lblNumeroDeRecibos.setBounds(239, 206, 108, 15);
+		lblNumeroDeRecibos.setBounds(209, 71, 108, 15);
 		lblNumeroDeRecibos.setText("Numero de recibos");
 		
 		Button btnAgregar = new Button(shell, SWT.NONE);
 		
-		btnAgregar.setBounds(355, 225, 75, 25);
+		btnAgregar.setBounds(295, 92, 75, 25);
 		btnAgregar.setText("Agregar");
 		
 		Spinner nRecibos = new Spinner(shell, SWT.BORDER);
 		nRecibos.setMinimum(1);
 		nRecibos.setSelection(1);
-		nRecibos.setBounds(274, 227, 47, 22);
+		nRecibos.setBounds(232, 94, 47, 22);
 		
 		Label lblNewLabel = new Label(shell, SWT.NONE);
 		lblNewLabel.setTextDirection(3355);
 		lblNewLabel.setAlignment(SWT.CENTER);
-		lblNewLabel.setBounds(10, 110, 55, 15);
+		lblNewLabel.setBounds(21, 16, 55, 15);
 		lblNewLabel.setText("Cajero");
 		
 		btnAgregar.addSelectionListener(new SelectionAdapter() {

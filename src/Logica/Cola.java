@@ -74,7 +74,7 @@ public class Cola {
     }
     
     public String dibujar() {
-    	String colaActual=": ";
+    	String colaActual=": |";
     	Nodo aux = cajero;
     	while(aux.sig != cajero){
             aux = aux.sig;
