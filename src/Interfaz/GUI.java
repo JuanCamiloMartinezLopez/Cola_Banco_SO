@@ -9,10 +9,8 @@ import org.eclipse.swt.events.SelectionEvent;
 import Logica.Cola;
 import org.eclipse.swt.widgets.Text;
 import org.eclipse.swt.widgets.Label;
-import org.eclipse.swt.widgets.Slider;
-import org.eclipse.swt.custom.CCombo;
 import org.eclipse.swt.widgets.Spinner;
-import org.eclipse.swt.widgets.Table;
+
 
 public class GUI {
 	protected Cola cola;

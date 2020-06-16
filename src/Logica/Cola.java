@@ -1,14 +1,16 @@
 package Logica;
 
 public class Cola {
-    private Nodo cajero = new Nodo();
+    private Nodo cajero = new Nodo(0);
+    int indice=1;
     public Cola(){
         cajero.recibos = -1;
         cajero.clave = "Cajero";
         cajero.sig = cajero;
     }
     public void insertar(int re){
-    	Nodo nuevo = new Nodo();
+    	Nodo nuevo = new Nodo(indice);
+    	indice+=1;
     	nuevo.recibos = re;
     	nuevo.clave = "Cliente";
     	
@@ -69,7 +71,7 @@ public class Cola {
     	Nodo aux = cajero;
         while(aux.sig != cajero){
             aux = aux.sig;
-            System.out.println(aux.clave+" | "+aux.recibos);
+            System.out.println(aux.clave+". "+aux.indice+" | "+aux.recibos);
         }
     }
     
@@ -78,7 +80,7 @@ public class Cola {
     	Nodo aux = cajero;
     	while(aux.sig != cajero){
             aux = aux.sig;
-            colaActual+=aux.recibos+" | ";
+            colaActual+="C. "+aux.indice+"-"+aux.recibos+" | ";
         }
     	return colaActual;	
     }
